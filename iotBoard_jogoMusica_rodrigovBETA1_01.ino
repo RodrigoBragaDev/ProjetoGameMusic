@@ -1307,14 +1307,7 @@ void desenhaNotas(int tempo,int posY){ //desenha as notas, pega o valor do bit d
     n2 = bitRead(notasAtuais,5);
     n3 = bitRead(notasAtuais,4);
     tempoNoHitZone = tempo;
-    /*
-    p0 = bitRead(notasAtuais,3);
-    p1 = bitRead(notasAtuais,2);
-    p2 = bitRead(notasAtuais,1);
-    p3 = bitRead(notasAtuais,0);
-    */
     posPerf = 0;
-    //ponto = 1;
     posGood = 1;
   }else if((posY>=60)&&(posY<63)){
     n0 = bitRead(notasAtuais,7);
@@ -1322,22 +1315,9 @@ void desenhaNotas(int tempo,int posY){ //desenha as notas, pega o valor do bit d
     n2 = bitRead(notasAtuais,5);
     n3 = bitRead(notasAtuais,4);
     tempoNoHitZone = tempo;
-    /*
-    p0 = bitRead(notasAtuais,3);
-    p1 = bitRead(notasAtuais,2);
-    p2 = bitRead(notasAtuais,1);
-    p3 = bitRead(notasAtuais,0);
-    */
     posGood=0;
-    //ponto = 2;
     posPerf= 1;
   }else if (posY>=63){
-    /*
-    n0=0;
-    n1=0;
-    n2=0;
-    n3=0;
-    */
     posGood = 0;
     posPerf = 0;
     if(bitRead(notasAtuais,7)||bitRead(notasAtuais,6)||bitRead(notasAtuais,5)||bitRead(notasAtuais,4)){
